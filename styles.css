@@ -1,0 +1,138 @@
+/* Estilos básicos y temas */
+body.light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark .card {
+    background-color: #555; 
+    color: #fff; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #16425B;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #A1B2D8;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #738290;
+}
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.carousel img {
+    display: none;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.carousel img:first-child {
+    display: block;
+}
+
+button#prev, button#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #C2D8B9;
+    color: #16425B;
+    border: none;
+    padding: 10px;
+}
+
+button#prev {
+    left: 10px;
+}
+
+button#next {
+    right: 10px;
+}
+
+/* Tarjetas */
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #E4F0D0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+body.light .card {
+    background-color: #E4F0D0;
+    color: #333;
+}
+
+.product-card span {
+    display: block;
+    font-weight: bold;
+}
+
+/* Formulario */
+.form-section {
+    margin-top: 20px;
+}
+
+#formSelector {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #A1B2D8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

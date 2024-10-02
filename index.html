@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación con Patrones de Diseño</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light">
+    <header>
+        <h1>Tu Rincón Creativo</h1>
+        <div class="theme-buttons">
+            <button id="darkModeButton">Modo Oscuro</button>
+            <button id="lightModeButton">Modo Claro</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="carousel" class="carousel">
+            <img src="Images/_4d1f9aae-429f-4d6c-9beb-541e2ac8f183.jpeg" alt="Imagen 1">
+            <img src="Images/_a856600d-e53c-46ea-a406-49110fe0e6b8.jpeg" alt="Imagen 2">
+            <img src="Images/_bbe02f74-49f9-4721-8d84-3d7d6d3329cf.jpeg" alt="Imagen 3">
+            <button id="prev">Anterior</button>
+            <button id="next">Siguiente</button>
+        </section>
+
+        <section id="content" class="card-section">
+            <!-- Aquí se generarán dinámicamente las tarjetas de productos/artículos -->
+        </section>
+
+        <section class="form-section">
+            <label for="formSelector">Seleccione un tipo de formulario:</label>
+            <select id="formSelector">
+                <option value="feedback">Feedback</option>
+                <option value="support">Soporte</option>
+            </select>
+            <div id="formContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Kevin Carbajal</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
